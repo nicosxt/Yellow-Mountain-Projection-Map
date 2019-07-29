@@ -61,8 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraFunctions.cs" />
-    <Compile Include="Assets\DebugSwitch.cs" />
     <Compile Include="Assets\EndlessForest.cs" />
     <Compile Include="Assets\EndlessForestTrigger.cs" />
     <Compile Include="Assets\MainController.cs" />
