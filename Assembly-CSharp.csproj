@@ -64,6 +64,8 @@
     <Compile Include="Assets\EndlessForest.cs" />
     <Compile Include="Assets\EndlessForestTrigger.cs" />
     <Compile Include="Assets\MainController.cs" />
+    <Compile Include="Assets\MenuController.cs" />
+    <Compile Include="Assets\MicInput.cs" />
     <Compile Include="Assets\MoveMe.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />

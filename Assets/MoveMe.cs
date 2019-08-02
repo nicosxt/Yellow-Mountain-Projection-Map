@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveMe : MonoBehaviour {
     public bool DoMove = true;
-    public float MoveV = 1;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,6 +11,6 @@ public class MoveMe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(new Vector3(0, 0, -MoveV), Space.World);
+        transform.Translate(new Vector3(0, 0, -MainController.s.forestMovingSpeed * Time.deltaTime), Space.World);
 	}
 }
