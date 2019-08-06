@@ -61,6 +61,7 @@ public class MicInput : MonoBehaviour
                 MainController.s.HideParticles();
             }
         }
+        Debug.Log(MainController.s.isPlayingForestScene);
 
 
     }
@@ -81,22 +82,22 @@ public class MicInput : MonoBehaviour
         StopMicrophone();
     }
 
-    void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            if (!_isInitialized)
-            {
-                InitMic();
-                _isInitialized = true;
-            }
-        }
+    //void OnApplicationFocus(bool focus)
+    //{
+    //    if (focus)
+    //    {
+    //        if (!_isInitialized)
+    //        {
+    //            InitMic();
+    //            _isInitialized = true;
+    //        }
+    //    }
 
-        if (!focus)
-        {
-            StopMicrophone();
-            _isInitialized = false;
-        }
-    }
+    //    if (!focus)
+    //    {
+    //        StopMicrophone();
+    //        _isInitialized = false;
+    //    }
+    //}
 
 }

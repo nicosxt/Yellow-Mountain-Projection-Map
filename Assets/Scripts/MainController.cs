@@ -28,6 +28,7 @@ public class MainController : MonoBehaviour {
     {
         singleton = this;
         isPlayingForestScene = true;
+        Screen.SetResolution(1920, 644, true);
     }
 
     public void ChangeValueMicThreshold(){
@@ -44,6 +45,11 @@ public class MainController : MonoBehaviour {
     {
 
         micReading = CameraObj.GetComponent<MicInput>().testSound;
+        //Debug.Log("anim>>>>>>>>>>>>>>:" + GetComponent<Animator>().GetBool("ShowParticles"));
+        if(Input.GetKeyUp(KeyCode.A))
+        {
+            HideParticles();
+        }
     }
 
     public void ShowParticles()

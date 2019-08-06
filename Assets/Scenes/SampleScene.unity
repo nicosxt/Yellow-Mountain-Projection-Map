@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -588,6 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202774851}
   - component: {fileID: 202774850}
+  - component: {fileID: 202774852}
   m_Layer: 0
   m_Name: Water4SimpleReflectionSceneCamera
   m_TagString: Untagged
@@ -642,12 +643,20 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 202774849}
   m_LocalRotation: {x: -0.0328762, y: 0, z: 0, w: -0.99945945}
-  m_LocalPosition: {x: 1.0799999, y: -36.505802, z: -18.15}
+  m_LocalPosition: {x: 1.0799999, y: -32.3542, z: -18.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &202774852
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202774849}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &239920562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,7 +5439,7 @@ GameObject:
   m_Layer: 0
   m_Name: EndlessForest
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5731,7 +5740,7 @@ GameObject:
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5788,7 +5797,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.032876167, y: 0, z: 0, w: 0.99945945}
+  m_LocalRotation: {x: -0.032876167, y: -0, z: -0, w: 0.99945945}
   m_LocalPosition: {x: -11.02, y: -27.36, z: 27.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6124,6 +6133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 859263983}
   - component: {fileID: 859263982}
+  - component: {fileID: 859263984}
   m_Layer: 0
   m_Name: Water4SimpleReflectionMain Camera
   m_TagString: Untagged
@@ -6177,13 +6187,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 859263981}
-  m_LocalRotation: {x: -0.06832511, y: 0.023941243, z: 0.0016400034, w: 0.9973745}
-  m_LocalPosition: {x: 896.24146, y: -1058.9617, z: -2951.0764}
+  m_LocalRotation: {x: -0.0328762, y: 0, z: 0, w: -0.99945945}
+  m_LocalPosition: {x: 1.0799999, y: -32.3542, z: -18.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &859263984
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 859263981}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &919144655
 GameObject:
   m_ObjectHideFlags: 0
@@ -15623,11 +15641,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.2
+      value: -15.9
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -45.3058
+      value: -43.23
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15655,7 +15673,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2.0389
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5, type: 2}
       propertyPath: m_LocalScale.z
@@ -20619,7 +20637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1817208207
 Transform:
   m_ObjectHideFlags: 0
@@ -25619,7 +25637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayingForestScene: 0
-  micThreshold: 0.5
+  micThreshold: 0.1
   micReading: 0
   forestMovingSpeed: 5
   CameraObj: {fileID: 534669902}
@@ -25641,7 +25659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2043242945
 Transform:
   m_ObjectHideFlags: 0
@@ -30430,6 +30448,14 @@ Prefab:
     - target: {fileID: 1703349322763166, guid: 6307cc510038e49c394042dab351edfa, type: 2}
       propertyPath: m_Name
       value: Nature-Package (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209647933103956, guid: 6307cc510038e49c394042dab351edfa, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703349322763166, guid: 6307cc510038e49c394042dab351edfa, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6307cc510038e49c394042dab351edfa, type: 2}
