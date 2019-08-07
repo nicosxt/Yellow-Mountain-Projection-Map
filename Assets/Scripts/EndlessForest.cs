@@ -26,7 +26,7 @@ public class EndlessForest : MonoBehaviour {
         if(InstantiateNext){
             GameObject newforest = Instantiate(nature, ForestMover) as GameObject;
             numoftree++;
-            newforest.transform.localPosition = new Vector3(0, 0, 95 + 95*numoftree);
+            newforest.transform.localPosition = new Vector3(0, 0, 95*numoftree);
             InstantiateNext = false;
         }
 	}

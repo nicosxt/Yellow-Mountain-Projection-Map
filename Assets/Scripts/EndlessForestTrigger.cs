@@ -19,7 +19,7 @@ public class EndlessForestTrigger : MonoBehaviour {
         if(other.gameObject.name == "InstantiationTrigger")
         {
             EndlessForest.s.InstantiateNext = true;
-            Debug.Log("trigger");
+            //Debug.Log("trigger");
         }
 
         if(other.gameObject.name == "DestructionTrigger")
