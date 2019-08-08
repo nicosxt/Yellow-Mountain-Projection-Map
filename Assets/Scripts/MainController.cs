@@ -32,11 +32,14 @@ public class MainController : MonoBehaviour {
 
     public InputField micThresholdInput, forestMovingSpeedInput;
 
+    public int s_width = 1920;
+    public int s_height = 644;
+
     private void Awake()
     {
         singleton = this;
         isPlayingForestScene = true;
-        Screen.SetResolution(1920, 644, true);
+        Screen.SetResolution(s_width, s_height, true);
     }
 
     public void ChangeValueMicThreshold(){
