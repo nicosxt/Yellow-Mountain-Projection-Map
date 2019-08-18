@@ -50,19 +50,18 @@ public class MicInput : MonoBehaviour
     void Update()
     {
         testSound = LevelMax();
+
         if (testSound > MainController.s.micThreshold)
         {
             Debug.Log("mic trigger");
-            if (MainController.s.isPlayingForestScene)
+            if(MainController.s.isPlayingForestScene)
             {
-                if (!MainController.s.animationTriggered)
+                if(!MainController.s.animationTriggered)
                 {
                     MainController.s.ShowParticles();
                     MainController.s.animationTriggered = true;
-                }
-            }
-            else
-            {
+                }  
+            }else{
                 if (!MainController.s.animationTriggered)
                 {
                     MainController.s.HideParticles();

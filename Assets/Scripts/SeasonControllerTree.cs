@@ -19,7 +19,7 @@ public class SeasonControllerTree : MonoBehaviour {
                 foreach(Material targetmat in SeasonController.s.treeSeasonMat){
                     //Debug.Log("target mat  names" + targetmat.name);
                     if (treemat.name.Contains(targetmat.name)){
-                        Debug.Log("MATCH" + targetmat.name + "  " + treemat.name);
+                        //Debug.Log("MATCH" + targetmat.name + "  " + treemat.name);
                         treemat.SetColor("_Color", targetmat.GetColor("_Color"));
                     }
                 }

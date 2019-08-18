@@ -35,5 +35,5 @@ Material:
     - _Cutoff: 0.218
     - _WindQuality: 4
     m_Colors:
-    - _Color: {r: 0.69556606, g: 0.9528302, b: 0, a: 1}
+    - _Color: {r: 0.28957775, g: 0.3962264, b: 0.005606967, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

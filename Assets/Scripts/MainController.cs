@@ -32,14 +32,17 @@ public class MainController : MonoBehaviour {
 
     public InputField micThresholdInput, forestMovingSpeedInput;
 
-    public int s_width = 1920;
-    public int s_height = 644;
+
+    [Header("声音响度影响粒子效果速度的程度")]
+    public float speedInfluencer = 0.5f;
+
+
 
     private void Awake()
     {
         singleton = this;
         isPlayingForestScene = true;
-        Screen.SetResolution(s_width, s_height, true);
+        Screen.SetResolution(1920, 644, true);
     }
 
     public void ChangeValueMicThreshold(){
@@ -71,6 +74,20 @@ public class MainController : MonoBehaviour {
                 }
               
             }
+            InfluenceSpeed();
+        }
+
+       
+
+    }
+
+    public void InfluenceSpeed(){
+        foreach(Transform ps in SeasonController.s.currentParticle){
+            if(ps.GetComponent<ParticleSystem>()){
+                ParticleSystem.MainModule psmain = ps.GetComponent<ParticleSystem>().main;
+                float newv = 0.5f + speedInfluencer * micReading;
+                psmain.simulationSpeed = Mathf.Lerp(psmain.simulationSpeed, newv, 0.4f);
+            }
         }
 
     }
@@ -87,6 +104,8 @@ public class MainController : MonoBehaviour {
 
     public void HideParticles()
     {
+        if (!currentFlowerSpawner)
+            return;
         Debug.Log("mic triggering HIDING PARTCLES");
         currentFlowerSpawner.GetComponent<SpawnFlower>().StopSpawning = true;
         GetComponent<Animator>().SetBool("ShowParticles", false);
