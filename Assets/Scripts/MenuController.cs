@@ -30,7 +30,7 @@ public class MenuController : MonoBehaviour {
         restartMenu.SetActive(false);
 
         datenow = DateTime.Now;
-        datebar = new DateTime(2019, 11, 1);
+        datebar = new DateTime(2019, 12, 23);
 
         comparedDates = DateTime.Compare(datenow, datebar);
 
